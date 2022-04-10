@@ -1,10 +1,9 @@
 moduledir './modules'
-mod 'puppetlabs/apache'
-mod 'puppetlabs-ntp', '9.1.0'
-mod 'puppetlabs-accounts', '7.1.1'
-mod 'puppetlabs-puppetdb', '7.9.0'
-mod 'puppetlabs-pe_databases', '2.2.0'
-mod 'puppetfinland-puppetmaster', '3.1.1'
-mod 'puppet-nginx', '3.3.0'
-mod 'spotify-puppetexplorer', '1.1.1'
-mod 'puppet-yum', '5.3.0'
+mod 'puppetlabs/apache', :latest
+mod 'puppetlabs-concat', :latest
+mod 'puppetlabs-stdlib', :latest
+mod 'puppetlabs-ntp', :latest
+mod 'puppetlabs-accounts', :latest
+mod 'puppet-nginx', :latest
+mod 'spotify-puppetexplorer', :latest
+mod 'puppet-yum', :latest
