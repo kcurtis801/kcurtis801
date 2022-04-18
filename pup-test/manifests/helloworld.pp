@@ -5,10 +5,10 @@ notify { 'greeting':
 }
 #class { 'apache': }
 
-class { 'apache':
-  apache_name  => 'httpd24u',
-  dev_packages => 'httpd24u-devel',
-}
+#class { 'apache':
+#  apache_name  => 'httpd24u',
+#  dev_packages => 'httpd24u-devel',
+#}
 #include apache::dev
 # this is a line with a lot of characters in it possible more that 70 but needs to be 90 or more
 -> package {'puppet-lint':

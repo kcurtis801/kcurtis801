@@ -3,7 +3,7 @@ node default {
   # Configure puppetdb and its underlying database
   class { 'puppetdb':
     postgresql_ssl_on       => true,
-    database_host           => 'kmc_wsl',
+    #database_host           => 'kmc_wsl',
     database_listen_address => '172.0.0.0',
   }
 

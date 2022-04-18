@@ -1,11 +1,11 @@
 node default {
-  import class ntp
-  class { 'ntp':
-        servers => ['nist-time-server.eoni.com','nist1-lv.ustiming.org','ntp-nist.ldsbc.edu']
-  }
+
 }
 
 
+class { 'ntp':
+  servers => ['nist-time-server.eoni.com','nist1-lv.ustiming.org','ntp-nist.ldsbc.edu']
+}
 
 file { default:
   ensure => file,
